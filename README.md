@@ -7,8 +7,8 @@ This is a simple weather application built with React.js that allows users to se
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/weather-application.git
-cd weather-application
+git clone https://github.com/Arunodhaya/react-weather-app
+cd react-weather-app
 ```
 ### 2. Install Dependencies
 
