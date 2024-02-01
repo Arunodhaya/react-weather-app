@@ -11,7 +11,7 @@ const SearchBar = ({ updateSearchQuery }) => {
 //     updateSearchQuery(q);
 //   }, 10000);
 
-const searchQuery = useDebounce(query, 10000)
+const searchQuery = useDebounce(query, 3000)
 
   useEffect(() => {
     console.log("ddd")
@@ -32,6 +32,12 @@ const searchQuery = useDebounce(query, 10000)
         value={query}
         onChange={handleInputChange}
       />
+     {
+      query && 
+      <div>
+        <p>Non-debounced Query: {query}</p>
+        <p>Debounced Query: {searchQuery}</p>
+      </div>}
     </div>
   );
 };
